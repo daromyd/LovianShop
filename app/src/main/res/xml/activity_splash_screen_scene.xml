@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:autoTransition="animateToEnd"
+        motion:duration="3000">
+       <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/logo_image"
+               motion:framePosition="10"
+               android:scaleX="1.0"
+               android:scaleY="1.0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/logo_image"
+               motion:framePosition="40"
+               android:translationY="-60dp"
+               android:scaleX="0.8"
+               android:scaleY="0.8" />
+           <KeyAttribute
+               motion:motionTarget="@+id/tv_title"
+               motion:framePosition="40"
+               android:alpha="0.0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/tv_title"
+               motion:framePosition="60"
+               android:translationY="45dp"
+               android:alpha="1.0" />
+
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/logo_image"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:alpha="0.0" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/tv_title"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:alpha="1.0"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:translationY="45dp" />
+        <Constraint
+            android:id="@+id/logo_image"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:translationY="-60dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+    </ConstraintSet>
+</MotionScene>

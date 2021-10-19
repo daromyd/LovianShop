@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "303332549953",
+    "project_id": "lovianshop-4f581",
+    "storage_bucket": "lovianshop-4f581.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303332549953:android:f5efe4ae9fd972ebd46dc0",
+        "android_client_info": {
+          "package_name": "com.example.lovianshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303332549953-ijmgman3e16ija630i174in4iiiej4pg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiEqTWuh3mlgrvsEfN4ijJmKsvZn1LaQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303332549953-ijmgman3e16ija630i174in4iiiej4pg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
